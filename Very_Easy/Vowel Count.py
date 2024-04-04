@@ -7,3 +7,8 @@
 # Solution : 
 def get_count(sentence):
     return sentence.count('a') + sentence.count('e') + sentence.count('i') + sentence.count('o') + sentence.count('u')
+
+# Solution after correction
+
+def get_count(sentence):
+    return sum(vowels in 'aeiouAEIOU' for vowels in sentence)
