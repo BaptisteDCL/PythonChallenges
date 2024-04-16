@@ -12,8 +12,8 @@
 
 def alphabet_position(text):
     alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-    rep = []
+    rep = ''
     for i in range(len(text)):
         if text[i].lower() in alphabet:
-            rep.append(alphabet.index(text[i].lower())+1)
-    return rep
+            rep += str(alphabet.index(text[i].lower())+1) + ' '
+    return rep[:-1]
